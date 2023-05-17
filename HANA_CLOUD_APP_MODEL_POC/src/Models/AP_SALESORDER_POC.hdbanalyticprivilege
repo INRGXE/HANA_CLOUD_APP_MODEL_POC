@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Privilege:analyticPrivilege xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AccessControl="http://www.sap.com/ndb/SQLCoreModelAccessControl.ecore" xmlns:Privilege="http://www.sap.com/ndb/BiModelPrivilege.ecore" id="AP_SALESORDER_POC" privilegeType="SQL_ANALYTIC_PRIVILEGE" schemaVersion="1.1">
+<descriptions defaultDescription="AP_SALESORDER_POC"/>
+<securedModels>
+  <modelUri>CV_SALESORDER_POC</modelUri>
+</securedModels>
+
+<restriction>
+  <filter attributeName="SalesOrderId" xsi:type="Privilege:AttributeFilter">
+    <valueFilter xsi:type="AccessControl:RangeValueFilter" including="true" value="" operator="BT"/>
+  </filter>
+  <attributeName>SalesOrderId</attributeName>
+  <originInformationModelUri>CV_SALESORDER_POC</originInformationModelUri>
+</restriction>
+</Privilege:analyticPrivilege>

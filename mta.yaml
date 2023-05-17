@@ -1,0 +1,30 @@
+_schema-version: "2.1"
+ID: HANA_CLOUD_APP_MODEL_POC
+version: 7.0.0
+modules:
+- name: HANA_CLOUD_APP_MODEL_POC
+  type: hdb
+  path: HANA_CLOUD_APP_MODEL_POC
+  requires:
+  - name: hdi_HANA_CLOUD_APP_MODEL_POC
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+  - name: cross-container-service-1
+    group: SERVICE_REPLACEMENTS
+    properties:
+      key: ServiceName_1
+      service: ~{the-service-name}
+resources:
+- name: hdi_HANA_CLOUD_APP_MODEL_POC
+  type: com.sap.xs.hdi-container
+  parameters:
+    config:
+      schema: HANA_CLOUD_APP_MODEL_POC
+  properties:
+    hdi-container-name: ${service-name}
+- name: cross-container-service-1
+  type: org.cloudfoundry.existing-service
+  parameters:
+    service-name: APP_SPACE_UPS_G
+  properties:
+    the-service-name: ${service-name}

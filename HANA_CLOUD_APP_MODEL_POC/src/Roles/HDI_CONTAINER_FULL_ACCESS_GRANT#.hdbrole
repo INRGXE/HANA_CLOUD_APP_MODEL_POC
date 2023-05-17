@@ -1,0 +1,14 @@
+{
+  "role": {
+                 "name": "HDI_CONTAINER_FULL_ACCESS_GRANT#",
+                 "schema_privileges": [
+                                {
+                                               "privileges_with_grant_option": [
+                                                              "SELECT",
+                                                              "SELECT METADATA",
+                                                              "CREATE OBJECT STRUCTURED PRIVILEGE"
+                                              ]
+                                }
+                 ]
+  }
+}

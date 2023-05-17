@@ -1,0 +1,14 @@
+{
+  "com.sap::QUALITY": {
+    "target": {
+      "object": "QUALITY",
+      "schema": "SAPHANADB"
+    }
+  },
+  "com.sap::SalesOrder": {
+    "target": {
+      "object": "SalesOrder",
+      "schema": "SAPHANADB"
+    }
+  }
+}
