@@ -1,6 +1,6 @@
 _schema-version: "2.1"
 ID: HANA_CLOUD_APP_MODEL_POC
-version: 7.0.0
+version: 14.0.0
 modules:
 - name: HANA_CLOUD_APP_MODEL_POC
   type: hdb

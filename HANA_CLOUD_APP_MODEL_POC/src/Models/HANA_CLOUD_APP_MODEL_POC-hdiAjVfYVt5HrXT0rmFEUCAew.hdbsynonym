@@ -10,5 +10,17 @@
       "object": "SalesOrder",
       "schema": "SAPHANADB"
     }
+  },
+  "com.sap::INVENTORY1": {
+    "target": {
+      "object": "INVENTORY1",
+      "schema": "UPS_SAME_USERS_POC"
+    }
+  },
+  "com.sap::INVENTORY3": {
+    "target": {
+      "object": "INVENTORY3",
+      "schema": "UPS_SAME_USERS_POC"
+    }
   }
 }

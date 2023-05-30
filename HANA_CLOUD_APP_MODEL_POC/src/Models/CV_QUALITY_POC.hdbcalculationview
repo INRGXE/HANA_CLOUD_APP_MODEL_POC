@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_QUALITY_POC" applyPrivilegeType="SQL_ANALYTIC_PRIVILEGE" dataCategory="CUBE" schemaVersion="3.0" hierarchyGeneration="SQL" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_QUALITY_POC" applyPrivilegeType="SQL_ANALYTIC_PRIVILEGE" dataCategory="CUBE" schemaVersion="3.0" hierarchyGeneration="AUTO" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="CV_QUALITY_POC.hdbcalculationview"/>
 <localVariables/>
 <variableMappings/>
@@ -22,7 +22,7 @@
     </attribute></attributes>
   <calculatedAttributes/>
   <baseMeasures>
-    <measure id="PRICE" order="3" aggregationType="sum" measureType="simple" restrictionExpressionLanguage="SQL">
+    <measure id="PRICE" order="3" aggregationType="sum" measureType="simple" restrictionExpressionLanguage="SQL" engineAggregation="none">
       <descriptions defaultDescription="PRICE"/>
       <measureMapping columnObjectName="QUALITY" columnName="PRICE"/>
       <exceptionAggregationMetadata/>
